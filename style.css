@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1em;
+    line-height: 1;
+}
+
+.wxcpo {
+    font-size: 60pt;
+}
+
+.navbar {
+    position: fixed;
+    font-size: 27pt;
+    margin: 1em;
+}
+
+.menu {
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    margin-top: 100px;
+    text-align: right;
+}
+
+
+.about {
+    text-align: right;
+}
+
+
+.together {
+    display: flex;
+    align-items: baseline;
+}
+
+.contacts a::after {
+        content: "";
+        position: absolute;
+        background: blue;
+        height: 0.85em;
+        width: 75%;
+        left: 0;
+        top: 50%;
+        z-index: -1;
+        transition: transform 175ms ease cubic-bezier(0.91, 0, 0.55, 1.64);
+        transform-origin: bottom left;
+    }
+    
+.contacts a:hover::after,
+.contacts a:focus::after {
+    transform: scale(1.35, 1.95);
+}
+
+
+@media (min-width: 200px) {
+    body {
+        margin: 0;
+    }
+    
+    .main-grid {
+        display: grid;
+        grid-template-columns: 
+            repeat(7, 1fr)
+    }   
+    
+    .about {
+        grid-column: 1 / -1;
+    }
+    
+    .works0 {
+        grid-column: 3 /-1;
+    }
+    
+    .works0 img {
+        width: 100%;
+    }
+    
+    .together {
+        grid-column: 2/7;
+    }
+    
+    .works1 img {
+        width: 100%;
+        height: 640px;
+    }
+    
+    .works12 img {
+        width: 100%;
+        height: 1500px;
+    }
+    
+    .works13 img {
+        width: 100%;
+        height: 640px;
+    }
+    
+    .works2 {
+        grid-column: 1 / 5;
+    }
+    
+    .works2 img{
+        width: 100%;
+    }
+    
+    .works3 {
+        grid-column: 2 / 7;
+    }
+    
+    .works3 img {
+        width: 100%;
+    }
+    
+    .works3 video {
+        width: 100%;
+        
+    }
+    
+    .works4 {
+        grid-column: 1 / 4;
+    }
+    
+    .works4 img {
+        width: 100%;    
+    }
+    
+    .moda {
+        grid-column: 1 / -1;    
+    }
+    
+    .moda img {
+        width: 100%;   
+    }
+    
+    .contacts {
+        grid-column: 6 / -1;
+    }
+    
+    .contacts a {
+        line-height: 1;
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        background: transparent;
+        font-size: 1.125rem;
+        padding: 0.5em;
+        position: relative;
+    }
+    
+    .me {
+        grid-column: 6 / -1;
+    }
+    
+    .me img {
+        width: 100%;
+        height: 300px;
+    }
+}
