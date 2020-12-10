@@ -65,7 +65,7 @@ h2 {
 }
 
 
-@media (min-width: 200px) {
+@media (min-width: 400px) {
     body {
         margin: 0;
     }
