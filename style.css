@@ -222,6 +222,14 @@ h2 {
         font-size: 24pt;
     }
     
+    .kimm {
+        grid-column: 2 /7;
+    }
+
+    .kimm img {
+        width: 100%;
+    }
+    
     .works0 {
         grid-column: 3 /-1;
     }
