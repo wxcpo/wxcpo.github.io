@@ -88,6 +88,14 @@ h2 {
         font-size: 14pt;
     }
     
+    .kimm {
+        grid-column: 2 /7;
+    }
+
+    .kimm img {
+        width: 100%;
+    }
+    
     .works0 {
         grid-column: 3 /-1;
     }
